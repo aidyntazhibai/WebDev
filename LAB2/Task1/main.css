@@ -13,22 +13,31 @@ body {
 }
 .title-box {
     width: 500px;
+    margin-bottom: 100px;
 }
 .title-box img {
-    width: 235px;
+    width: 270px;
     margin-bottom: -10px;
 }
 .title-box p {
     color: #000;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: normal;
     line-height: 32px;
 }
+.square
+{
+    width: 500px;
+    padding: 100px;
+    text-align: center;
+    margin-left: 30px;
+    
+}
 .form-box {
-    width: 425px;
+    width: 375px;
     padding: 15px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 5px;
     background: #fff;
     margin-left: 60px;
     box-shadow: 0px 2px 10px 1px rgba(71, 71, 71, 0.52);
@@ -43,9 +52,7 @@ body {
     border-radius: 5px;
     outline: none;
 }
-.form-box input:focus {
-    box-shadow: 0px 0px 1px 1px rgb(22, 111, 229);
-}
+
 .form-box button {
     width: 100%;
     margin-bottom: 15px;
@@ -87,22 +94,24 @@ body {
     display: inline-block;
     margin-bottom: 5px;
 }
-.form-box .create-btn a:hover {
+.form-box .create-btn a:hover 
+{
     background: #42b72a;
 }
+
 .sub-box h3
 {
-    width: 270px;
-    position: relative;
-    color: black;
-    font-family: Arial, sans-serif;
-    padding: 130px 890px;
-    font-size: 12px;
-    font-weight: 600;
+   font-size: 15px;
+   font-weight: normal;
 }
-.sub-box h3 a
+.sub-box a
 {
-    color: black; 
-    font-size: 13px;
-    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold; 
+}
+.sub-box a:hover
+{
+    text-decoration: underline;
 }
