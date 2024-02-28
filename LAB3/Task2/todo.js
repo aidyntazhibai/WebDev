@@ -52,3 +52,6 @@ function newElement() {
     }
   }
 }
+
+alert(wer)
+console.log(wer);
