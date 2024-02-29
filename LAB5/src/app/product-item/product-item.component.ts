@@ -28,12 +28,6 @@ export class ProductItemComponent {
   }
 
   handleLike(): void {
-    if (this.clicked) {
-      this.product.likes--;
-      this.likesUpdate.emit(this.product.likes);
-      this.clicked = false;
-      return;
-    }
     this.product.likes++;
     this.likesUpdate.emit(this.product.likes);
     this.clicked = true;

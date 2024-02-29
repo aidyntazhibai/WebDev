@@ -40,10 +40,4 @@ export class ProductListComponent {
     product.likes = likes;
   }
 
-  handleDelete(product: Product): void {
-    const index = this.allItems.indexOf(product);
-    if (index !== -1) {
-      this.allItems.splice(index, 1);
-    }
-  }
 }

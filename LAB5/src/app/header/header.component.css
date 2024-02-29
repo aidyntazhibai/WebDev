@@ -2,9 +2,9 @@ header {
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3070cf;
+    justify-content: left;
+    align-items: right;
+    background-color: #535557;
     border-bottom: 1px solid lightgray;
 }
 
