@@ -33,7 +33,4 @@ export class ProductItemComponent {
     this.clicked = true;
   }
 
-  handleDelete(): void {
-    this.deleteUpdate.emit(this.product.id);
-  }
 }
