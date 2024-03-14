@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; 
+  }
+  
+  #inputArea {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #bstValues {
+    width: 400px; 
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px; 
+  }
+  
+  #treeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+  }
+  
+  .node {
+    position: absolute;
+    width: 60px; 
+    height: 60px; 
+    border: 3px solid green; 
+    border-radius: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .line {
+    position: absolute;
+    width: 4px; 
+    background-color: green; 
+    transform-origin: 0 0;
+  }
+  

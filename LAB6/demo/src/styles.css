@@ -1,1 +1,90 @@
-/* You can add global styles to this file, and also import other style files */
+/* Основные переменные */
+:root {
+    --primary-color: #673ab7; /* Обновленный основной цвет */
+    --secondary-color: #ffc107; /* Обновленный второстепенный цвет */
+    --background-color: #f5f5f5; /* Измененный цвет фона */
+    --text-color: #212121; /* Измененный цвет текста */
+    --font-family: 'Roboto', sans-serif; /* Измененный шрифт */
+    --border-radius: 10px; /* Обновленный радиус скругления */
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+    padding: 30px;
+}
+
+/* Стилизация заголовков с измененным расположением */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+    padding-left: 20px;
+    border-left: 4px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Стилизация и позиционирование ссылок */
+a {
+    color: var(--secondary-color);
+    padding: 5px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: translateY(-2px);
+}
+
+/* Изменение стилей кнопок с новым расположением */
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+/* Адаптивная сетка с измененным расположением элементов */
+.container {
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
